@@ -126,7 +126,7 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData("John Thomas", "Hello, John Thomas!")]
         [InlineData("Leigh Ann", "Hello, Leigh Ann!")]
         [InlineData("", "Hello!")]
-        // [InlineData(null, "Hello!")] // Assumption: string will not be null
+// [InlineData(null, "Hello!")] // Assumption: string will not be null
         public void GetGreeting(string personName, string expectedGreeting)
         {
             // Arrange
@@ -138,6 +138,7 @@ namespace ChallengesWithTestsMark8.Tests
             // Assert
             Assert.Equal(expectedGreeting, actual);
         }
+
 
         [Fact]
         public void GetHey()
